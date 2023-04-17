@@ -1,9 +1,8 @@
 require('dotenv').config();
-const {PORT} = process.env
 const express = require('express');
 const app = express();
 
-const port = PORT || 3000 ;
+const port = parseInt(process.env.PORT,10) || 3000 ;
 
 
 
